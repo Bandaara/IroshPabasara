@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Irosh Pabasara | Portfolio</title>
+  <link rel="icon" href="avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress"></div>
+  <canvas id="matrix"></canvas>
+  <div class="scanlines"></div>
+
+  <header class="topbar">
+    <a href="#home" class="logo">&gt;_ IROSH PABASARA</a>
+    <nav class="menu" aria-label="Main menu">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#mypc">My PC</a>
+      <a href="#contact">Contact me</a>
+    </nav>
+    <div class="tools">
+      <span id="clock" title="Sri Lanka time (UTC+5:30)">--:--:--</span>
+    </div>
+  </header>
+
+
+  <nav class="dots" aria-label="Sections">
+    <a href="#home" class="active" title="Home"></a>
+    <a href="#about" title="About"></a>
+    <a href="#skills" title="Skills"></a>
+    <a href="#mypc" title="My PC"></a>
+    <a href="#contact" title="Contact"></a>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <div class="terminal">
+        <div class="bar"><i></i><i></i><i></i><span>ubettata@portfolio:~</span></div>
+        <div class="body hero">
+          <div class="hero-text">
+          <p><span class="prompt">$</span> whoami</p>
+          <h1 class="glitch" data-text="IROSH PABASARA">IROSH PABASARA</h1>
+          <p><span class="prompt">$</span> <span id="typing"></span><span class="cursor">█</span></p>
+          <div class="ascii" id="ascii" aria-label="BANDARA in ASCII codes"></div>
+          <a href="#contact" class="btn">Contact me</a>
+          </div>
+          <div class="avatar">
+            <span class="ring r1"></span>
+            <span class="ring r2"></span>
+            <img src="avatar.png" alt="Irosh Pabasara">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="panel reveal">
+        <h2>&gt; about_me</h2>
+        <p><b>Irosh Pabasara</b> (Bandaara) | Sri Lanka</p>
+        <p>Root access granted. Welcome to my digital space.</p>
+        <ul class="info">
+          <li><span>Name</span> Irosh Pabasara</li>
+          <li><span>Age</span> 18+</li>
+          <li><span>Location</span> Sri Lanka, Hambantota</li>
+          <li><span>Status</span> Developer, gamer, බුද්දිමතා, හෙනම කැරියා. Always learning, exploring code, and leveling up</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="panel wide reveal">
+        <h2>&gt; skill_tree</h2>
+        <div class="tree">
+          <div class="node root">Irosh.skills</div>
+          <div class="branches">
+          <div class="branch">
+            <div class="node head">coding</div>
+            <ul class="leaves">
+            <li class="node leaf" style="--i:1"><label><span>HTML / CSS</span><b data-n="67">0%</b></label><div class="track"><div class="fill" data-w="67"></div></div></li>
+            <li class="node leaf" style="--i:2"><label><span>JavaScript</span><b data-n="30">0%</b></label><div class="track"><div class="fill" data-w="30"></div></div></li>
+            <li class="node leaf" style="--i:3"><label><span>Python</span><b data-n="19">0%</b></label><div class="track"><div class="fill" data-w="19"></div></div></li>
+            <li class="node leaf" style="--i:4"><label><span>Discord Dev</span><b data-n="98">0%</b></label><div class="track"><div class="fill" data-w="98"></div></div></li>
+            </ul>
+          </div>
+          <div class="branch">
+            <div class="node head">pro level</div>
+            <ul class="leaves">
+            <li class="node leaf" style="--i:5"><label><span>Play games</span><b data-n="100">0%</b></label><div class="track"><div class="fill" data-w="100"></div></div></li>
+            <li class="node leaf" style="--i:6"><label><span>Eat</span><b data-n="100">0%</b></label><div class="track"><div class="fill" data-w="100"></div></div></li>
+            <li class="node leaf" style="--i:7"><label><span>Sleep</span><b>6-8 H</b></label></li>
+            <li class="node leaf" style="--i:8"><label><span>Washing</span><b>5-6 times daily</b></label></li>
+            <li class="node leaf" style="--i:9"><label><span>Googling the same error again</span><b data-n="85">0%</b></label><div class="track"><div class="fill" data-w="85"></div></div></li>
+            <li class="node leaf" style="--i:10"><label><span>Opening 50 tabs at once</span><b data-n="90">0%</b></label><div class="track"><div class="fill" data-w="90"></div></div></li>
+            <li class="node leaf" style="--i:11"><label><span>Finding bugs I wrote myself</span><b data-n="75">0%</b></label><div class="track"><div class="fill" data-w="75"></div></div></li>
+            <li class="node leaf" style="--i:12"><label><span>Surviving on 1% battery</span><b data-n="95">0%</b></label><div class="track"><div class="fill" data-w="95"></div></div></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY PC -->
+    <section id="mypc">
+      <div class="pc-stack">
+        <div class="panel wide reveal still">
+          <h2>&gt; my_pc</h2>
+          <div class="setup-scroll">
+            <div class="scene">
+          <svg class="setup-svg stage-off" viewBox="0 0 1120 890" role="img" aria-label="My PC: a wheel showing every part on the wall, and below it the desk setup with two monitors, mouse, headset and a black PC case with glass side">
+            <defs>
+              <radialGradient id="aura" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff1e2d" stop-opacity=".16"/><stop offset="1" stop-color="#ff1e2d" stop-opacity="0"/></radialGradient>
+              <linearGradient id="refl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".14"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+              <linearGradient id="caseg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1d23"/><stop offset="1" stop-color="#08080b"/></linearGradient>
+              <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14161b"/><stop offset="1" stop-color="#0b0c10"/></linearGradient>
+            
+                <linearGradient id="mg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#e4e7ec"/><stop offset=".45" stop-color="#8d929c"/><stop offset="1" stop-color="#363a41"/>
+                </linearGradient>
+                <polygon id="sp" points="-0.8,-34 0.8,-34 1.4,-74 -1.4,-74" fill="url(#mg)" stroke="#000" stroke-opacity=".55" stroke-width=".4"/>
+                <g id="ds"><use href="#sp" x="-2.6"/><use href="#sp" x="2.6"/></g>
+              <linearGradient id="deskg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d3d6dc"/></linearGradient>
+              <radialGradient id="rubber" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#09090b"/><stop offset=".78" stop-color="#0d0d10"/><stop offset=".86" stop-color="#18181d"/><stop offset=".93" stop-color="#101014"/><stop offset=".985" stop-color="#2a2a31"/><stop offset="1" stop-color="#050507"/></radialGradient>
+              <linearGradient id="cyl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".8"/><stop offset=".28" stop-color="#000" stop-opacity=".25"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset=".72" stop-color="#000" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity=".8"/></linearGradient>
+              <clipPath id="offclip"><circle cx="9" cy="0" r="100"/></clipPath>
+              <linearGradient id="baseg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2a33"/><stop offset="1" stop-color="#0c0c10"/></linearGradient>
+              <linearGradient id="rffade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+              <mask id="rfmask"><rect x="940" y="523" width="180" height="12" fill="url(#rffade)"/></mask>
+              <clipPath id="basetop"><polygon points="952,506 1102,506 1112,529 940,529"/></clipPath>
+              <image id="rx7img" href="rx7_cutout.png" width="1000" height="420"/>
+              <clipPath id="hubclip"><circle r="41"/></clipPath>
+            </defs>
+            <rect x="20" y="14" width="1080" height="706" rx="12" fill="rgba(255,30,45,.025)" stroke="#2a1216"/>
+            
+    <g class="wheelgrp" transform="translate(560 170) scale(0.66)">
+      <circle class="plaque" r="208"/>
+      <circle class="neon led" r="214"/>
+      <g transform="scale(1.9)">
+        <g clip-path="url(#offclip)">
+          <rect x="-100" y="-100" width="220" height="200" fill="#07070a"/>
+          <g id="treadmove"><rect x="50" y="-120.000" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-112.146" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-104.292" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-96.438" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-88.584" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-80.730" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-72.876" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-65.022" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-57.168" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-49.314" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-41.460" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-33.606" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-25.752" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-17.898" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-10.044" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="-2.190" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="5.664" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="13.518" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="21.372" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="29.226" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="37.080" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="44.934" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="52.788" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="60.642" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="68.496" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="76.350" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="84.204" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="92.058" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="99.911" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="107.765" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="115.619" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="123.473" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="131.327" width="70" height="3.8" fill="#1f1f27"/><rect x="50" y="139.181" width="70" height="3.8" fill="#1f1f27"/></g>
+          <rect x="40" y="-110" width="80" height="220" fill="url(#cyl)"/>
+        </g>
+        <g class="rot">
+          <circle r="100" fill="url(#rubber)"/>
+          <circle r="97.4" fill="none" stroke="#25252c" stroke-width="5" stroke-dasharray="5.1 2.56"/>
+          <circle r="92.5" fill="none" stroke="#1d1d23" stroke-width="1.2"/>
+          <circle r="88" fill="none" stroke="#1d1d23" stroke-width="1.2"/>
+          <path id="tp" d="M-90.5 0 A90.5 90.5 0 1 1 90.5 0 A90.5 90.5 0 1 1 -90.5 0" fill="none"/>
+          <text font-size="5" font-weight="700" fill="#8c919b" opacity=".6"><textPath href="#tp" textLength="566" lengthAdjust="spacing">IROSH PERFORMANCE • 225/45 R17 • IROSH PERFORMANCE • 225/45 R17 • IROSH PERFORMANCE • 225/45 R17 • IROSH PERFORMANCE • 225/45 R17 • IROSH PERFORMANCE • 225/45 R17 • </textPath></text>
+          <circle r="84" fill="none" stroke="#ff1e2d" stroke-opacity=".7" stroke-width="1.1"/>
+          <circle r="81" fill="none" stroke="#000" stroke-width="2.4"/>
+          <circle r="79" fill="url(#mg)"/>
+          <circle r="76.5" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width=".8"/>
+          <circle r="73.5" fill="#09050a"/>
+          <circle r="73.5" fill="none" stroke="#000" stroke-opacity=".7" stroke-width="3"/>
+          <circle r="56" fill="#2b2e35"/><circle r="56" fill="none" stroke="url(#mg)" stroke-width="2"/>
+          <circle cx="0.00" cy="-47.00" r="1.7" fill="#09050a"/><circle cx="14.52" cy="-44.70" r="1.7" fill="#09050a"/><circle cx="27.63" cy="-38.02" r="1.7" fill="#09050a"/><circle cx="38.02" cy="-27.63" r="1.7" fill="#09050a"/><circle cx="44.70" cy="-14.52" r="1.7" fill="#09050a"/><circle cx="47.00" cy="-0.00" r="1.7" fill="#09050a"/><circle cx="44.70" cy="14.52" r="1.7" fill="#09050a"/><circle cx="38.02" cy="27.63" r="1.7" fill="#09050a"/><circle cx="27.63" cy="38.02" r="1.7" fill="#09050a"/><circle cx="14.52" cy="44.70" r="1.7" fill="#09050a"/><circle cx="0.00" cy="47.00" r="1.7" fill="#09050a"/><circle cx="-14.52" cy="44.70" r="1.7" fill="#09050a"/><circle cx="-27.63" cy="38.02" r="1.7" fill="#09050a"/><circle cx="-38.02" cy="27.63" r="1.7" fill="#09050a"/><circle cx="-44.70" cy="14.52" r="1.7" fill="#09050a"/><circle cx="-47.00" cy="0.00" r="1.7" fill="#09050a"/><circle cx="-44.70" cy="-14.52" r="1.7" fill="#09050a"/><circle cx="-38.02" cy="-27.63" r="1.7" fill="#09050a"/><circle cx="-27.63" cy="-38.02" r="1.7" fill="#09050a"/><circle cx="-14.52" cy="-44.70" r="1.7" fill="#09050a"/>
+          <circle r="30" fill="#09050a"/>
+          <rect x="-1.4" y="-79" width="2.8" height="7" rx="1" fill="#c9ccd2" transform="rotate(200)"/>
+        </g>
+        <g transform="rotate(118)">
+          <rect x="-10" y="-64" width="20" height="31" rx="5" fill="#ff1e2d" stroke="#8a0f18"/>
+          <rect x="-6" y="-60" width="12" height="3" fill="#7a0b14"/><rect x="-6" y="-54" width="12" height="3" fill="#7a0b14"/><rect x="-6" y="-48" width="12" height="3" fill="#7a0b14"/>
+        </g>
+        <g class="rot">
+          <use href="#ds" transform="rotate(0)"/><use href="#ds" transform="rotate(45)"/><use href="#ds" transform="rotate(90)"/><use href="#ds" transform="rotate(135)"/><use href="#ds" transform="rotate(180)"/><use href="#ds" transform="rotate(225)"/><use href="#ds" transform="rotate(270)"/><use href="#ds" transform="rotate(315)"/>
+          <circle r="35" fill="none" stroke="url(#mg)" stroke-width="3"/>
+          <circle cx="0.00" cy="-31.00" r="2.2" fill="url(#mg)" stroke="#000" stroke-width=".5"/><circle cx="29.48" cy="-9.58" r="2.2" fill="url(#mg)" stroke="#000" stroke-width=".5"/><circle cx="18.22" cy="25.08" r="2.2" fill="url(#mg)" stroke="#000" stroke-width=".5"/><circle cx="-18.22" cy="25.08" r="2.2" fill="url(#mg)" stroke="#000" stroke-width=".5"/><circle cx="-29.48" cy="-9.58" r="2.2" fill="url(#mg)" stroke="#000" stroke-width=".5"/>
+        </g>
+      </g><g class="wpart" data-a="22.5" data-k="Main monitor" data-n="Samsung N4010 32-inch" data-s="Main screen" tabindex="0" transform="translate(40.7 -98.3)"><image href="amsung_N4010_32-inchssss-removebg-preview.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="wpart" data-a="67.5" data-k="Secondary monitor" data-n="Samsung NC241 24-inch" data-s="Portrait screen" tabindex="0" transform="translate(98.3 -40.7)"><image href="Samsung_NC241_portrait.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="wpart" data-a="112.5" data-k="CPU" data-n="Intel Core i5-4590" data-s="4 cores · 3.3 GHz" tabindex="0" transform="translate(98.3 40.7)"><image href="Intel_R__Core_i5-4590-removebg-preview.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="wpart" data-a="157.5" data-k="GPU" data-n="MSI GTX 660" data-s="2 GB GDDR5" tabindex="0" transform="translate(40.7 98.3)"><image href="NVIDIA_GeForce_GTX_660-removebg-preview.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="wpart" data-a="202.5" data-k="SSD" data-n="Transcend SSD225S 512GB" data-s="SATA III · 2.5&quot;" tabindex="0" transform="translate(-40.7 98.3)"><image href="Transcend_SSD225S_512GB.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="wpart" data-a="247.5" data-k="HDD" data-n="Seagate Barracuda 1TB" data-s="7200 RPM" tabindex="0" transform="translate(-98.3 40.7)"><image href="1TB_Hard-removebg-preview.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="wpart" data-a="292.5" data-k="Mouse" data-n="A4Tech Gaming Mouse" data-s="Red LED · wired" tabindex="0" transform="translate(-98.3 -40.7)"><image href="A4TECH_Gaming_Mouse-removebg-preview.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="wpart" data-a="337.5" data-k="Headset" data-n="Marvo Scorpion Headset" data-s="Over-ear · boom mic" tabindex="0" transform="translate(-40.7 -98.3)"><image href="Marvo_Scorpion_Gaming_Headset-removebg-preview.png" x="-38" y="-30" width="76" height="60" preserveAspectRatio="xMidYMid meet"/></g>
+      <g class="whub">
+        <circle r="47.5" fill="url(#mg)" stroke="#111" stroke-width="3"/>
+        <circle r="41" fill="#000"/>
+        <path d="M0 0 V-41 A41 41 0 0 1 41 0 Z M0 0 V41 A41 41 0 0 1 -41 0 Z" fill="#ff1e2d"/>
+        <path d="M0 0 H41 A41 41 0 0 1 0 41 Z M0 0 H-41 A41 41 0 0 1 0 -41 Z" fill="#f2dcdc"/>
+        <circle r="19" fill="#000"/><text class="hubtxt" x="0" y="5" text-anchor="middle">IP</text>
+        <image href="bmw_logo_PNG19707.png" x="-41" y="-41" width="82" height="82" clip-path="url(#hubclip)"/>
+      </g>
+    </g>
+
+            <g transform="translate(0 250)">
+            <ellipse cx="560" cy="400" rx="520" ry="200" fill="url(#aura)"/>
+            <polygon points="60,470 1110,470 1120,545 20,545" fill="url(#deskg)" stroke="#c3c7ce"/>
+            <ellipse cx="510" cy="494" rx="170" ry="6" fill="#000" opacity=".22"/><ellipse cx="220" cy="492" rx="85" ry="5" fill="#000" opacity=".22"/>
+              
+            <rect x="20" y="545" width="1100" height="14" rx="3" fill="#eceef2" stroke="#c3c7ce"/>
+            <rect x="20" y="559" width="1100" height="3" fill="#ff1e2d" class="led"/>
+            <rect x="70" y="559" width="14" height="70" fill="#e6e8ec" stroke="#c3c7ce"/>
+            <rect x="1050" y="559" width="14" height="70" fill="#e6e8ec" stroke="#c3c7ce"/>
+            <path class="cb ext" pathLength="100" d="M710 300 C 660 300 640 470 510 476" style="--d:0.2s"/><path class="cp" pathLength="100" d="M710 300 C 660 300 640 470 510 476"/><path class="cb ext" pathLength="100" d="M710 316 C 600 316 330 492 220 480" style="--d:0.5s"/><path class="cp" pathLength="100" d="M710 316 C 600 316 330 492 220 480"/><path class="cb ext" pathLength="100" d="M528 500 C 600 524 660 524 710 484" style="--d:0.8s"/><path class="cp" pathLength="100" d="M528 500 C 600 524 660 524 710 484"/><path class="cb ext" pathLength="100" d="M72 502 C 120 566 560 580 710 492" style="--d:1.1s"/><path class="cp" pathLength="100" d="M72 502 C 120 566 560 580 710 492"/>
+            <ellipse cx="815" cy="503" rx="125" ry="8" fill="#000" opacity=".3"/>
+            <rect x="722" y="500" width="30" height="7" rx="2" fill="#050507"/><rect x="878" y="500" width="30" height="7" rx="2" fill="#050507"/>
+            <rect x="710" y="170" width="210" height="330" rx="12" fill="url(#caseg)" stroke="#2c2c34" stroke-width="2"/>
+            <rect x="714" y="174" width="202" height="322" rx="9" fill="none" stroke="#fff" stroke-opacity=".06"/>
+            <rect x="724" y="172" width="72" height="7" rx="2" fill="#050507"/>
+            <circle cx="734" cy="175.5" r="2.2" fill="#ff1e2d" class="pcled"/>
+            <rect x="746" y="174" width="8" height="3.5" rx="1" fill="#2a2a33"/><rect x="758" y="174" width="8" height="3.5" rx="1" fill="#2a2a33"/>
+            <circle cx="776" cy="175.5" r="1.6" fill="#2a2a33"/><circle cx="784" cy="175.5" r="1.6" fill="#2a2a33"/>
+            <path d="M810 175 H 904 M810 178 H 904" stroke="#07070a" stroke-width="1.6" stroke-dasharray="3 2"/>
+            <rect x="704" y="190" width="3" height="290" rx="1.5" fill="#ff1e2d" class="pcled"/>
+            <rect x="722" y="182" width="186" height="306" rx="6" fill="#07070a"/>
+            <g>
+              <g transform="translate(738,215)"><circle r="18" fill="none" stroke="#ff1e2d" stroke-width="2" class="pcled"/><circle r="15" fill="#050507" stroke="#2c2c35"/><g class="fan"><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(0.0)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(51.4)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(102.9)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(154.3)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(205.7)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(257.1)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(308.6)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/></g><circle r="3.3" fill="#15151a"/></g><g transform="translate(738,267)"><circle r="18" fill="none" stroke="#ff1e2d" stroke-width="2" class="pcled"/><circle r="15" fill="#050507" stroke="#2c2c35"/><g class="fan"><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(0.0)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(51.4)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(102.9)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(154.3)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(205.7)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(257.1)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.2" rx="3.0" ry="7.5" transform="rotate(308.6)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/></g><circle r="3.3" fill="#15151a"/></g>
+              <rect x="756" y="192" width="140" height="244" rx="4" fill="url(#pcb)" stroke="#2a2a33"/>
+              <path d="M762 300 H 786 V 420 M 870 205 V 300 M 810 300 V 330 M 840 300 V 322" stroke="#2a1216" fill="none" stroke-width="1.2"/>
+              <rect x="766" y="198" width="124" height="14" rx="2" fill="#1d1d24"/>
+              <rect x="762" y="214" width="18" height="60" rx="2" fill="#1d1d24"/>
+              <rect x="862" y="218" width="30" height="80" rx="2" fill="#15151a" stroke="#222"/>
+              <rect x="865" y="220" width="5" height="76" rx="1" fill="#1f1f29"/><rect class="pcled" x="865" y="220" width="5" height="3" fill="#ff1e2d"/>
+              <rect x="875" y="220" width="5" height="76" rx="1" fill="#1f1f29"/><rect class="pcled" x="875" y="220" width="5" height="3" fill="#ff1e2d"/>
+              <rect x="884" y="396" width="12" height="12" rx="2" fill="#1d1d24" stroke="#2a2a33"/>
+              <g class="pt" tabindex="0" data-k="CPU"><g class="part"><rect x="796" y="222" width="60" height="60" rx="6" fill="#16161c" stroke="#33333d"/><rect x="801" y="227" width="50" height="50" rx="4" fill="#0c0c10" stroke="#222"/><g transform="translate(826,252)"><circle r="25" fill="none" stroke="#ff1e2d" stroke-width="2" class="pcled"/><circle r="22" fill="#050507" stroke="#2c2c35"/><g class="fan"><ellipse cx="0" cy="-12.1" rx="4.4" ry="11.0" transform="rotate(0.0)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-12.1" rx="4.4" ry="11.0" transform="rotate(51.4)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-12.1" rx="4.4" ry="11.0" transform="rotate(102.9)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-12.1" rx="4.4" ry="11.0" transform="rotate(154.3)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-12.1" rx="4.4" ry="11.0" transform="rotate(205.7)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-12.1" rx="4.4" ry="11.0" transform="rotate(257.1)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-12.1" rx="4.4" ry="11.0" transform="rotate(308.6)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/></g><circle r="4.8" fill="#15151a"/></g></g><path class="lead" d="M940 249 L852 252"/><g class="lbl"><rect class="box" x="940" y="226" width="170" height="46" rx="7"/><text class="t1" x="1025.0" y="244" text-anchor="middle">CPU</text><text class="t2" x="1025.0" y="263" text-anchor="middle">Intel Core i5-4590</text></g></g><g class="pt" tabindex="0" data-k="GPU"><g class="part"><rect x="726" y="318" width="8" height="50" fill="#9aa0aa"/><rect x="732" y="322" width="168" height="44" rx="5" fill="#0a0a0e" stroke="#3a3a45"/><rect x="732" y="322" width="168" height="4" rx="2" fill="#2b7bd8"/><g transform="translate(778,346)"><circle r="16" fill="#050507" stroke="#2c2c35"/><g class="fan"><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(0.0)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(51.4)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(102.9)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(154.3)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(205.7)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(257.1)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(308.6)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/></g><circle r="3.5" fill="#15151a"/></g><g transform="translate(842,346)"><circle r="16" fill="#050507" stroke="#2c2c35"/><g class="fan"><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(0.0)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(51.4)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(102.9)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(154.3)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(205.7)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(257.1)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/><ellipse cx="0" cy="-8.8" rx="3.2" ry="8.0" transform="rotate(308.6)" fill="#1c1c24" stroke="#3a3a45" stroke-width=".6"/></g><circle r="3.5" fill="#15151a"/></g><rect x="870" y="338" width="26" height="16" rx="3" fill="#15151a" stroke="#2c2c35"/></g><path class="lead" d="M940 339 L900 344"/><g class="lbl"><rect class="box" x="940" y="316" width="170" height="46" rx="7"/><text class="t1" x="1025.0" y="334" text-anchor="middle">GPU</text><text class="t2" x="1025.0" y="353" text-anchor="middle">MSI GTX 660</text></g></g><g class="pt" tabindex="0" data-k="SSD"><image class="part" href="Transcend_SSD225S_512GB.png" x="832" y="385" width="46" height="52"/><path class="lead" d="M940 399 L878 410"/><g class="lbl"><rect class="box" x="940" y="376" width="170" height="46" rx="7"/><text class="t1" x="1025.0" y="394" text-anchor="middle">SSD 512GB</text><text class="t2" x="1025.0" y="413" text-anchor="middle">Transcend SSD225S</text></g></g><g class="pt" tabindex="0" data-k="HDD"><image class="part" href="1TB_Hard-removebg-preview.png" x="738" y="378" width="72" height="72"/><path class="lead" d="M940 453 Q870 454 800 430"/><g class="lbl"><rect class="box" x="940" y="430" width="170" height="46" rx="7"/><text class="t1" x="1025.0" y="448" text-anchor="middle">HDD 1TB</text><text class="t2" x="1025.0" y="467" text-anchor="middle">Seagate Barracuda</text></g></g>
+              <path class="cb" pathLength="100" d="M888 452 V 262 H 896" style="--d:0.4s"/><path class="cp" pathLength="100" d="M888 452 V 262 H 896"/><path class="cb" pathLength="100" d="M902 452 V 344 H 898" style="--d:0.7s"/><path class="cp" pathLength="100" d="M902 452 V 344 H 898"/><path class="cb" pathLength="100" d="M738 414 H 730 V 296 H 756" style="--d:1.0s"/><path class="cp" pathLength="100" d="M738 414 H 730 V 296 H 756"/><path class="cb" pathLength="100" d="M855 437 V 452" style="--d:1.2s"/><path class="cp" pathLength="100" d="M855 437 V 452"/><path class="cb" pathLength="100" d="M774 450 V 452" style="--d:1.3s"/><path class="cp" pathLength="100" d="M774 450 V 452"/>
+              <rect x="722" y="452" width="186" height="36" fill="#050507" stroke="#1d1d24"/>
+              <path d="M732 464 H 898 M732 470 H 898 M732 476 H 898" stroke="#15151a" stroke-width="2"/>
+            </g>
+            <rect class="caseglow" x="722" y="182" width="186" height="306" rx="6" fill="#ff1e2d"/>
+            <polygon points="722,182 840,182 722,330" fill="url(#refl)"/>
+            <rect x="722" y="182" width="186" height="306" rx="6" fill="rgba(120,150,255,.04)" stroke="#3a3a45"/>
+            <g class="pt" tabindex="0" data-k="Headset"><image class="part" href="Marvo_Scorpion_Gaming_Headset-removebg-preview.png" x="20" y="449" width="96" height="96"/><path class="lead" d="M68 580 L68 546"/><g class="lbl"><rect class="box" x="8" y="582" width="160" height="46" rx="7"/><text class="t1" x="88.0" y="600" text-anchor="middle">Headset</text><text class="t2" x="88.0" y="619" text-anchor="middle">Marvo Scorpion</text></g></g><g class="pt" tabindex="0" data-k="Secondary monitor"><image class="part" href="Samsung_NC241_portrait.png" x="125" y="145.5" width="190" height="344.5"/><path class="lead" d="M220 133.5 L220 149.5"/><g class="lbl"><rect class="box" x="130" y="87.5" width="180" height="46" rx="7"/><text class="t1" x="220.0" y="105.5" text-anchor="middle">Secondary monitor</text><text class="t2" x="220.0" y="124.5" text-anchor="middle">Samsung NC241 24"</text></g></g><g class="pt" tabindex="0" data-k="Main monitor"><image class="part" href="amsung_N4010_32-inchssss-removebg-preview.png" x="325" y="275" width="370" height="235"/><path class="lead" d="M510 272 L510 292"/><g class="lbl"><rect class="box" x="420" y="226" width="180" height="46" rx="7"/><text class="t1" x="510.0" y="244" text-anchor="middle">Main monitor</text><text class="t2" x="510.0" y="263" text-anchor="middle">Samsung N4010 32"</text></g></g><g class="pt" tabindex="0" data-k="Mouse"><image class="part" href="A4TECH_Gaming_Mouse-removebg-preview.png" x="495" y="498" width="60" height="38" preserveAspectRatio="none"/><path class="lead" d="M525 580 L525 538"/><g class="lbl"><rect class="box" x="433" y="582" width="184" height="46" rx="7"/><text class="t1" x="525.0" y="600" text-anchor="middle">Mouse</text><text class="t2" x="525.0" y="619" text-anchor="middle">A4Tech Gaming Mouse</text></g></g>
+            
+            <g class="statue">
+              <ellipse cx="1026" cy="541" rx="94" ry="4" fill="#000" opacity=".22"/>
+              <polygon points="940,529 1112,529 1112,539 940,539" fill="#15151b" stroke="#2c2c34"/>
+              <polygon points="952,506 1102,506 1112,529 940,529" fill="url(#baseg)" stroke="#2c2c34"/>
+              <polygon points="962,506 1004,506 982,529 940,529" fill="#fff" opacity=".05"/>
+              <g clip-path="url(#basetop)"><g mask="url(#rfmask)" opacity=".3"><use href="#rx7img" transform="translate(972 569.2) scale(.11 -.11)"/></g></g>
+              <use class="carimg" href="#rx7img" transform="translate(972 476.8) scale(.11)"/>
+            </g>
+            <svg class="screen" x="366" y="298" width="296" height="164" viewBox="0 0 300 167" preserveAspectRatio="xMidYMid slice" pointer-events="none">
+              <defs>
+                <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#150a32"/><stop offset=".55" stop-color="#8a2a62"/><stop offset="1" stop-color="#ffa86a"/></linearGradient>
+                <radialGradient id="dsun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff0c0"/><stop offset=".6" stop-color="#ff8a5a"/><stop offset="1" stop-color="#ff5a6a" stop-opacity="0"/></radialGradient>
+                <linearGradient id="droad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34343c"/><stop offset="1" stop-color="#0e0e12"/></linearGradient>
+                <radialGradient id="dlamp"><stop offset="0" stop-color="#ffe9a8" stop-opacity=".9"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient>
+                <radialGradient id="dsmk"><stop offset="0" stop-color="#f4f4f8" stop-opacity=".85"/><stop offset="1" stop-color="#f4f4f8" stop-opacity="0"/></radialGradient>
+                <linearGradient id="dbeam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff4c8" stop-opacity=".6"/><stop offset="1" stop-color="#fff4c8" stop-opacity="0"/></linearGradient>
+                <pattern id="scan1" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity=".3"/></pattern>
+              </defs>
+              <rect width="300" height="167" fill="url(#dsky)"/>
+              <circle class="tw" cx="30" cy="33" r="0.8" fill="#fff" style="--d:2.4s"/><circle class="tw" cx="207" cy="29" r="0.6" fill="#fff" style="--d:1.4s"/><circle class="tw" cx="105" cy="52" r="1" fill="#fff" style="--d:0.6s"/><circle class="tw" cx="48" cy="22" r="0.8" fill="#fff" style="--d:0.0s"/><circle class="tw" cx="213" cy="51" r="0.6" fill="#fff" style="--d:0.3s"/><circle class="tw" cx="55" cy="3" r="0.6" fill="#fff" style="--d:1.1s"/><circle class="tw" cx="253" cy="14" r="1" fill="#fff" style="--d:1.3s"/><circle class="tw" cx="233" cy="35" r="0.6" fill="#fff" style="--d:2.4s"/><circle class="tw" cx="71" cy="29" r="1" fill="#fff" style="--d:0.9s"/><circle class="tw" cx="206" cy="29" r="0.6" fill="#fff" style="--d:0.0s"/><circle class="tw" cx="159" cy="59" r="0.6" fill="#fff" style="--d:0.5s"/><circle class="tw" cx="205" cy="57" r="1" fill="#fff" style="--d:1.5s"/><circle class="tw" cx="55" cy="5" r="0.6" fill="#fff" style="--d:0.5s"/><circle class="tw" cx="136" cy="3" r="1" fill="#fff" style="--d:0.8s"/><circle class="tw" cx="155" cy="27" r="0.6" fill="#fff" style="--d:0.2s"/><circle class="tw" cx="110" cy="40" r="1" fill="#fff" style="--d:0.6s"/>
+              <circle cx="205" cy="92" r="46" fill="url(#dsun)"/>
+              <g class="par1"><polygon transform="translate(0 0)" points="0,100 25,82 48,92 80,70 115,90 140,80 170,96 205,72 240,90 270,78 300,100 300,112 0,112" fill="#2c1238"/><polygon transform="translate(300 0)" points="0,100 25,82 48,92 80,70 115,90 140,80 170,96 205,72 240,90 270,78 300,100 300,112 0,112" fill="#2c1238"/></g>
+              <g class="par2"><polygon transform="translate(0 0)" points="0,112 20,97 40,109 70,93 100,109 130,96 160,111 190,95 220,109 250,99 280,111 300,105 300,120 0,120" fill="#150a1f"/><polygon transform="translate(300 0)" points="0,112 20,97 40,109 70,93 100,109 130,96 160,111 190,95 220,109 250,99 280,111 300,105 300,120 0,120" fill="#150a1f"/></g>
+              <g class="poles"><g transform="translate(60 0)"><rect x="-1" y="76" width="2" height="40" fill="#0c0612"/><rect x="-1" y="76" width="9" height="2" fill="#0c0612"/><circle cx="7" cy="80" r="9" fill="url(#dlamp)"/><circle cx="7" cy="79" r="1.6" fill="#fff3c8"/></g><g transform="translate(210 0)"><rect x="-1" y="76" width="2" height="40" fill="#0c0612"/><rect x="-1" y="76" width="9" height="2" fill="#0c0612"/><circle cx="7" cy="80" r="9" fill="url(#dlamp)"/><circle cx="7" cy="79" r="1.6" fill="#fff3c8"/></g><g transform="translate(360 0)"><rect x="-1" y="76" width="2" height="40" fill="#0c0612"/><rect x="-1" y="76" width="9" height="2" fill="#0c0612"/><circle cx="7" cy="80" r="9" fill="url(#dlamp)"/><circle cx="7" cy="79" r="1.6" fill="#fff3c8"/></g><g transform="translate(510 0)"><rect x="-1" y="76" width="2" height="40" fill="#0c0612"/><rect x="-1" y="76" width="9" height="2" fill="#0c0612"/><circle cx="7" cy="80" r="9" fill="url(#dlamp)"/><circle cx="7" cy="79" r="1.6" fill="#fff3c8"/></g></g>
+              <rect y="115.5" width="300" height="1.6" fill="#b9bec7"/>
+              <g class="posts"><rect x="0" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="15" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="30" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="45" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="60" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="75" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="90" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="105" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="120" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="135" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="150" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="165" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="180" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="195" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="210" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="225" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="240" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="255" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="270" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="285" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="300" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="315" y="112" width="1.6" height="7" fill="#9aa0aa"/><rect x="330" y="112" width="1.6" height="7" fill="#9aa0aa"/></g>
+              <rect y="119" width="300" height="48" fill="url(#droad)"/>
+              <rect y="119" width="300" height="1.4" fill="#f2dcdc" opacity=".8"/><rect y="163" width="300" height="1.4" fill="#f2dcdc" opacity=".5"/>
+              <g class="dash"><rect x="-40" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="0" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="40" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="80" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="120" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="160" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="200" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="240" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="280" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/><rect x="320" y="147" width="20" height="2" fill="#f2dcdc" opacity=".85"/></g>
+              <rect class="streak" x="271" y="159" width="55" height="0.7" fill="#fff" opacity=".4" style="--d:0.23s"/><rect class="streak" x="137" y="135" width="58" height="0.7" fill="#fff" opacity=".4" style="--d:0.24s"/><rect class="streak" x="135" y="130" width="54" height="0.7" fill="#fff" opacity=".4" style="--d:0.15s"/><rect class="streak" x="86" y="158" width="28" height="0.7" fill="#fff" opacity=".4" style="--d:0.30s"/><rect class="streak" x="242" y="152" width="36" height="0.7" fill="#fff" opacity=".4" style="--d:0.31s"/><rect class="streak" x="72" y="127" width="28" height="0.7" fill="#fff" opacity=".4" style="--d:0.10s"/><rect class="streak" x="163" y="162" width="27" height="0.7" fill="#fff" opacity=".4" style="--d:0.39s"/><rect class="streak" x="207" y="152" width="38" height="0.7" fill="#fff" opacity=".4" style="--d:0.26s"/><rect class="streak" x="190" y="155" width="26" height="0.7" fill="#fff" opacity=".4" style="--d:0.33s"/>
+              <polygon points="224,111 300,96 300,130 224,121" fill="url(#dbeam)"/>
+              <ellipse cx="150" cy="145" rx="98" ry="5" fill="#ff1e2d" opacity=".3"/>
+              <circle class="smk" cx="66" cy="124" r="10" fill="url(#dsmk)" style="--d:0.00s;--tx:-77px;--ty:-25px"/><circle class="smk" cx="66" cy="124" r="11" fill="url(#dsmk)" style="--d:0.23s;--tx:-65px;--ty:-34px"/><circle class="smk" cx="66" cy="124" r="9" fill="url(#dsmk)" style="--d:0.46s;--tx:-80px;--ty:-19px"/><circle class="smk" cx="66" cy="124" r="11" fill="url(#dsmk)" style="--d:0.69s;--tx:-78px;--ty:-12px"/><circle class="smk" cx="66" cy="124" r="7" fill="url(#dsmk)" style="--d:0.92s;--tx:-96px;--ty:-15px"/><circle class="smk" cx="66" cy="124" r="10" fill="url(#dsmk)" style="--d:1.15s;--tx:-66px;--ty:-21px"/><circle class="smk" cx="66" cy="124" r="10" fill="url(#dsmk)" style="--d:1.38s;--tx:-64px;--ty:-12px"/><circle class="smk" cx="66" cy="124" r="7" fill="url(#dsmk)" style="--d:1.61s;--tx:-73px;--ty:-18px"/>
+              <g class="marks"><rect x="0" y="139" width="70" height="2.2" fill="#08080b" opacity=".55"/><rect x="100" y="142" width="60" height="2" fill="#08080b" opacity=".5"/><rect x="200" y="139.5" width="80" height="2.2" fill="#08080b" opacity=".55"/></g>
+              <g class="drift"><use class="carimg" href="#rx7img" transform="translate(55 68.2) scale(.19)"/></g>
+              <text class="neonjp" x="292" y="22" text-anchor="end" font-size="13" fill="#ff3a6a">ドリフト</text>
+              <g class="gl" transform="translate(249 75) scale(.95)">
+                <g class="glbob">
+                  <g class="glhair"><path d="M25 3 C9 3 7 18 8 30 C9 40 6 48 10 54 L40 54 C44 48 41 40 42 30 C43 18 41 3 25 3 Z" fill="#1c1020"/></g>
+                  <rect x="19" y="55" width="4.6" height="19" fill="#f3d3c0"/><rect x="26.4" y="55" width="4.6" height="19" fill="#f3d3c0"/>
+                  <rect x="19" y="62" width="4.6" height="12" fill="#17171d"/><rect x="26.4" y="62" width="4.6" height="12" fill="#17171d"/>
+                  <rect x="19" y="62" width="4.6" height="1" fill="#f2f2f5"/><rect x="26.4" y="62" width="4.6" height="1" fill="#f2f2f5"/>
+                  <path d="M17 74 H24 V78 H15 Z M26 74 H33 L35 78 H26 Z" fill="#f2f2f5" stroke="#c9ccd3" stroke-width=".4"/>
+                  <g class="glskirt"><path d="M14 49 L36 49 L40 60 L10 60 Z" fill="#1a1a22"/><path d="M10 59 H40" stroke="#ff1e2d" stroke-width="1"/></g>
+                  <path d="M15 27 C15 24 35 24 35 27 L37 50 L13 50 Z" fill="#c4122a"/>
+                  <path d="M22 25.5 L28 25.5 L27 38 L23 38 Z" fill="#f2f2f5"/><path d="M25 27 V50" stroke="#8f0d1f" stroke-width=".7"/>
+                  <path d="M15 27 L9 44 L12.4 46 L18.5 31 Z" fill="#c4122a"/><circle cx="10.7" cy="46.4" r="2.2" fill="#f7dccb"/>
+                  <rect x="23" y="21.5" width="4" height="5" fill="#efc9b6"/>
+                  <g class="glwave"><path d="M34.5 27 L42 21.5 L44.4 24.6 L37 31 Z" fill="#c4122a"/><circle cx="43.6" cy="20.4" r="2.3" fill="#f7dccb"/></g>
+                  <ellipse cx="25" cy="14" rx="9.5" ry="10.5" fill="#f7dccb"/>
+                  <ellipse cx="19" cy="17.3" rx="2.2" ry="1.1" fill="#ff7a8a" opacity=".35"/><ellipse cx="31" cy="17.3" rx="2.2" ry="1.1" fill="#ff7a8a" opacity=".35"/>
+                  <g class="glblink"><ellipse cx="21.2" cy="14.2" rx="2.1" ry="2.9" fill="#2a1218"/><ellipse cx="28.8" cy="14.2" rx="2.1" ry="2.9" fill="#2a1218"/>
+                    <circle cx="20.5" cy="13" r=".8" fill="#fff"/><circle cx="28.1" cy="13" r=".8" fill="#fff"/></g>
+                  <path d="M18.6 11.8 Q21.2 10.2 23.8 11.8 M26.2 11.8 Q28.8 10.2 31.4 11.8" fill="none" stroke="#1a0a1c" stroke-width=".8" stroke-linecap="round"/>
+                  <path d="M23.3 19.6 Q25 21.2 26.7 19.6" fill="none" stroke="#b03048" stroke-width=".8" stroke-linecap="round"/>
+                  <path d="M15.5 12 C15.5 5 21 3 25 3 C29 3 34.5 5 34.5 12 C31 8.5 28 8 25.5 8.2 C23 10 19 11.5 15.5 12 Z" fill="#1c1020"/>
+                  <path d="M15.5 12 C14 20 14.5 27 16 31 C17.5 26 17 19 17.5 13 Z M34.5 12 C36 20 35.5 27 34 31 C32.5 26 33 19 32.5 13 Z" fill="#1c1020"/>
+                  <rect x="30.5" y="7" width="3.4" height="1.5" rx=".6" fill="#ff1e2d" transform="rotate(-25 32 8)"/>
+                </g>
+              </g>
+              <foreignObject width="300" height="167" pointer-events="none"><video class="screenvid" src="screen-main.mp4" autoplay muted loop playsinline preload="auto"></video></foreignObject>
+              <g class="desktop"><g><rect x="8.5" y="8" width="11" height="7.4" rx=".6" fill="#1c5a96" stroke="#9bd0ff" stroke-width=".7"/><rect x="12" y="15.6" width="4" height="1.4" fill="#9bd0ff"/><rect x="10.5" y="16.8" width="8" height=".8" fill="#9bd0ff"/><text x="14" y="23.2" class="dlabel" text-anchor="middle">This PC</text></g><g><path d="M10 35.5 H18 L17.2 43.4 H10.8 Z" fill="#d7dee3" stroke="#8d9aa3" stroke-width=".5"/><rect x="9.2" y="34.2" width="9.6" height="1.4" rx=".5" fill="#aeb9c0"/><path d="M12 37 V42 M14 37 V42 M16 37 V42" stroke="#8d9aa3" stroke-width=".5"/><circle cx="14" cy="39.5" r="2" fill="none" stroke="#3fbf6a" stroke-width=".7"/><text x="14" y="48.2" class="dlabel" text-anchor="middle">Recycle Bin</text></g><g><path d="M8.8 59.4 H12.6 L13.8 60.8 H19.2 V67.4 H8.8 Z" fill="#f2c14e"/><path d="M8.8 61.8 H19.2 V67.4 H8.8 Z" fill="#ffd978"/><text x="14" y="73.2" class="dlabel" text-anchor="middle">My Files</text></g><g><rect x="8.5" y="82.5" width="11" height="11" rx="2.6" fill="#5865f2"/><g transform="translate(10 84.2) scale(.33)"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" fill="#fff"/></g><text x="14" y="98.2" class="dlabel" text-anchor="middle">Discord</text></g><g><circle cx="14" cy="113" r="5.3" fill="#2a8cff"/><path d="M8.8 113 H19.2 M14 107.8 C11 110 11 116 14 118.2 C17 116 17 110 14 107.8" fill="none" stroke="#dff0ff" stroke-width=".6"/><text x="14" y="123.2" class="dlabel" text-anchor="middle">Browser</text></g><rect y="154.6" width="300" height="12.4" fill="#12121a" opacity=".95"/><rect y="154.4" width="300" height=".5" fill="#fff" opacity=".14"/>
+                <path d="M4.2 158.4 L8.2 157.8 V161.6 H4.2 Z M8.8 157.7 L13.4 157 V161.6 H8.8 Z M4.2 162.2 H8.2 V166 L4.2 165.4 Z M8.8 162.2 H13.4 V166.7 L8.8 166 Z" fill="#fff" transform="translate(0 -1)"/>
+                <rect x="17" y="156" width="58" height="9.6" fill="#f0f0f0"/><circle cx="21.2" cy="160.6" r="1.7" fill="none" stroke="#555" stroke-width=".6"/><path d="M22.4 161.8 L24 163.4" stroke="#555" stroke-width=".6"/>
+                <text x="27" y="162.1" class="dtext" fill="#5a5a5a">Type here to search</text>
+                <g transform="translate(79 158.6)" fill="none" stroke="#fff" stroke-width=".6"><rect x="0" y="1.2" width="3" height="4"/><rect x="3.6" y="0" width="3" height="5.2"/></g>
+                <g transform="translate(92 157.4)"><path d="M0.4 1.7999999999999998 H4.199999999999999 L5.3999999999999995 3.1999999999999997 H10.799999999999999 V9.8 H0.4 Z" fill="#f2c14e"/><path d="M0.4 4.2 H10.799999999999999 V9.8 H0.4 Z" fill="#ffd978"/></g>
+                <g transform="translate(103 157.4)"><circle cx="5.6" cy="5.4" r="5.3" fill="#2a8cff"/><path d="M0.4 5.4 H10.799999999999999 M5.6 0.20000000000000007 C2.6 2.4 2.6 8.4 5.6 10.6 C8.6 8.4 8.6 2.4 5.6 0.20000000000000007" fill="none" stroke="#dff0ff" stroke-width=".6"/></g>
+                <g transform="translate(114 157.4)"><rect x="0.09999999999999998" y="-0.09999999999999998" width="11" height="11" rx="2.6" fill="#5865f2"/><g transform="translate(1.6 1.6) scale(.33)"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" fill="#fff"/></g></g>
+                <rect x="113.6" y="165.4" width="6" height=".9" fill="#7fc3ff"/><rect x="102.6" y="165.4" width="6" height=".9" fill="#7fc3ff"/>
+                <path d="M228 162 L229.6 160.4 L231.2 162" fill="none" stroke="#fff" stroke-width=".5"/>
+                <g fill="none" stroke="#fff" stroke-width=".5"><path d="M236.4 161.4 Q239.2 159.2 242 161.4 M237.6 162.8 Q239.2 161.6 240.8 162.8"/><circle cx="239.2" cy="164" r=".4" fill="#fff"/></g>
+                <g fill="none" stroke="#fff" stroke-width=".5"><path d="M246.6 161.6 H248 L249.8 160.2 V164.2 L248 162.8 H246.6 Z"/><path d="M251 161.2 Q252 162.4 251 163.6"/></g>
+                <text x="258" y="163.2" class="dtext" fill="#fff" text-anchor="middle" font-size="3">ENG</text>
+                <text id="tclock" x="288.5" y="160.6" class="dtext" fill="#fff" text-anchor="end">10:24 PM</text>
+                <text id="tdate" x="288.5" y="165" class="dtext" fill="#fff" text-anchor="end">10/24/2026</text>
+                <rect x="292.2" y="157.4" width="4.2" height="3.6" fill="none" stroke="#fff" stroke-width=".5"/></g>
+              <g class="stg stg-post"><rect width="300" height="167" fill="#000"/><text class="postline" x="9" y="16" style="--d:0.15s">IROSH-PC  BIOS v1.0</text><text class="postline" x="9" y="25" style="--d:0.53s">CPU  : Intel Core i5-4590</text><text class="postline" x="9" y="34" style="--d:0.91s">GPU  : MSI GTX 660 (2048 MB)</text><text class="postline" x="9" y="43" style="--d:1.29s">SATA0: Transcend SSD225S 512GB</text><text class="postline" x="9" y="52" style="--d:1.67s">SATA1: Seagate Barracuda 1TB</text><text class="postline" x="9" y="61" style="--d:2.05s">Boot device found . . . OK</text><text class="postline" x="9" y="156" style="--d:2.5s">Press DEL to enter SETUP</text></g>
+              <g class="stg stg-win"><rect width="300" height="167" fill="#000"/><path d="M130 56 L148.6 53.4 V68 H130 Z M150.6 53.1 L170 50.4 V68 H150.6 Z M130 70 H148.6 V84.6 L130 82 Z M150.6 70 H170 V87.4 L150.6 84.6 Z" fill="#1596ff"/><g class="dotg" style="--i:0"><circle cx="150" cy="113" r="1.5" fill="#fff"/></g><g class="dotg" style="--i:1"><circle cx="150" cy="113" r="1.5" fill="#fff"/></g><g class="dotg" style="--i:2"><circle cx="150" cy="113" r="1.5" fill="#fff"/></g><g class="dotg" style="--i:3"><circle cx="150" cy="113" r="1.5" fill="#fff"/></g><g class="dotg" style="--i:4"><circle cx="150" cy="113" r="1.5" fill="#fff"/></g></g>
+              <g class="stg stg-shut"><rect width="300" height="167" fill="#0b4d8f"/><g class="dotg2" style="--i:0"><circle cx="150" cy="76" r="1.5" fill="#fff"/></g><g class="dotg2" style="--i:1"><circle cx="150" cy="76" r="1.5" fill="#fff"/></g><g class="dotg2" style="--i:2"><circle cx="150" cy="76" r="1.5" fill="#fff"/></g><g class="dotg2" style="--i:3"><circle cx="150" cy="76" r="1.5" fill="#fff"/></g><g class="dotg2" style="--i:4"><circle cx="150" cy="76" r="1.5" fill="#fff"/></g><text x="150" y="104" class="shuttxt" text-anchor="middle">Shutting down</text></g>
+              <g class="stg stg-black"><rect width="300" height="167" fill="#000"/></g>
+              <rect width="300" height="167" fill="url(#scan1)"/>
+              <polygon points="0,0 120,0 0,90" fill="#fff" opacity=".05"/>
+            </svg>
+            <svg class="screen" x="138" y="157" width="166" height="298" viewBox="0 0 166 298" preserveAspectRatio="xMidYMid slice" pointer-events="none">
+              <defs>
+                <linearGradient id="gbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12082a"/><stop offset=".6" stop-color="#3b0f3a"/><stop offset="1" stop-color="#8a1030"/></linearGradient>
+                <linearGradient id="hairg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f1a38"/><stop offset="1" stop-color="#0e0714"/></linearGradient>
+                <radialGradient id="iris" cx=".5" cy=".35" r=".7"><stop offset="0" stop-color="#ff9aa8"/><stop offset=".6" stop-color="#ff2d4a"/><stop offset="1" stop-color="#8a0f24"/></radialGradient>
+                <radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></radialGradient>
+                <pattern id="scan2" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity=".3"/></pattern>
+              </defs>
+              <rect width="166" height="298" fill="url(#gbg)"/>
+              <circle class="tw" cx="147" cy="10" r="0.7" fill="#fff" style="--d:1.1s"/><circle class="tw" cx="160" cy="132" r="1.2" fill="#fff" style="--d:1.2s"/><circle class="tw" cx="74" cy="118" r="1.2" fill="#fff" style="--d:1.3s"/><circle class="tw" cx="126" cy="132" r="0.7" fill="#fff" style="--d:1.7s"/><circle class="tw" cx="70" cy="146" r="0.7" fill="#fff" style="--d:2.0s"/><circle class="tw" cx="39" cy="109" r="0.7" fill="#fff" style="--d:0.9s"/><circle class="tw" cx="84" cy="21" r="1.2" fill="#fff" style="--d:0.6s"/><circle class="tw" cx="22" cy="57" r="1.2" fill="#fff" style="--d:0.7s"/><circle class="tw" cx="35" cy="42" r="1.2" fill="#fff" style="--d:1.5s"/><circle class="tw" cx="97" cy="39" r="0.9" fill="#fff" style="--d:2.1s"/><circle class="tw" cx="123" cy="59" r="1.2" fill="#fff" style="--d:2.3s"/><circle class="tw" cx="105" cy="127" r="0.7" fill="#fff" style="--d:2.4s"/><circle class="tw" cx="61" cy="44" r="1.2" fill="#fff" style="--d:1.0s"/><circle class="tw" cx="135" cy="106" r="0.9" fill="#fff" style="--d:1.0s"/>
+              <circle cx="132" cy="50" r="17" fill="#ffe9c8" opacity=".92"/><circle cx="127" cy="46" r="3" fill="#f0cfa6" opacity=".6"/><circle cx="137" cy="55" r="2" fill="#f0cfa6" opacity=".6"/>
+              <rect x="0" y="218" width="14" height="80" fill="#0b0517"/><rect class="tw" x="9" y="251" width="2.4" height="3" fill="#ffd27a" style="--d:2.3s"/><rect class="tw" x="3" y="260" width="2.4" height="3" fill="#ffd27a" style="--d:0.6s"/><rect class="tw" x="9" y="260" width="2.4" height="3" fill="#ffd27a" style="--d:3.8s"/><rect class="tw" x="3" y="269" width="2.4" height="3" fill="#ffd27a" style="--d:1.2s"/><rect class="tw" x="9" y="278" width="2.4" height="3" fill="#ffd27a" style="--d:2.2s"/><rect x="14" y="209" width="16" height="89" fill="#0b0517"/><rect class="tw" x="23" y="233" width="2.4" height="3" fill="#ffd27a" style="--d:0.4s"/><rect class="tw" x="17" y="242" width="2.4" height="3" fill="#ffd27a" style="--d:3.3s"/><rect class="tw" x="23" y="242" width="2.4" height="3" fill="#ffd27a" style="--d:4.2s"/><rect class="tw" x="17" y="251" width="2.4" height="3" fill="#ffd27a" style="--d:1.4s"/><rect class="tw" x="23" y="251" width="2.4" height="3" fill="#ffd27a" style="--d:2.7s"/><rect class="tw" x="17" y="269" width="2.4" height="3" fill="#ffd27a" style="--d:4.3s"/><rect x="30" y="239" width="16" height="59" fill="#0b0517"/><rect class="tw" x="39" y="245" width="2.4" height="3" fill="#ffd27a" style="--d:3.2s"/><rect class="tw" x="33" y="254" width="2.4" height="3" fill="#ffd27a" style="--d:0.3s"/><rect class="tw" x="39" y="254" width="2.4" height="3" fill="#ffd27a" style="--d:0.8s"/><rect class="tw" x="39" y="263" width="2.4" height="3" fill="#ffd27a" style="--d:0.0s"/><rect class="tw" x="33" y="272" width="2.4" height="3" fill="#ffd27a" style="--d:0.5s"/><rect class="tw" x="33" y="281" width="2.4" height="3" fill="#ffd27a" style="--d:4.4s"/><rect class="tw" x="33" y="290" width="2.4" height="3" fill="#ffd27a" style="--d:1.3s"/><rect x="46" y="234" width="22" height="64" fill="#0b0517"/><rect class="tw" x="49" y="240" width="2.4" height="3" fill="#ffd27a" style="--d:4.2s"/><rect class="tw" x="55" y="249" width="2.4" height="3" fill="#ffd27a" style="--d:0.5s"/><rect class="tw" x="49" y="258" width="2.4" height="3" fill="#ffd27a" style="--d:4.1s"/><rect class="tw" x="55" y="258" width="2.4" height="3" fill="#ffd27a" style="--d:0.1s"/><rect class="tw" x="55" y="267" width="2.4" height="3" fill="#ffd27a" style="--d:2.7s"/><rect class="tw" x="61" y="267" width="2.4" height="3" fill="#ffd27a" style="--d:2.6s"/><rect class="tw" x="49" y="285" width="2.4" height="3" fill="#ffd27a" style="--d:1.8s"/><rect class="tw" x="55" y="285" width="2.4" height="3" fill="#ffd27a" style="--d:3.9s"/><rect class="tw" x="61" y="294" width="2.4" height="3" fill="#ffd27a" style="--d:4.1s"/><rect x="68" y="213" width="18" height="85" fill="#0b0517"/><rect class="tw" x="71" y="219" width="2.4" height="3" fill="#ffd27a" style="--d:2.0s"/><rect class="tw" x="71" y="228" width="2.4" height="3" fill="#ffd27a" style="--d:2.5s"/><rect class="tw" x="77" y="246" width="2.4" height="3" fill="#ffd27a" style="--d:3.0s"/><rect class="tw" x="77" y="273" width="2.4" height="3" fill="#ffd27a" style="--d:0.5s"/><rect x="86" y="234" width="14" height="64" fill="#0b0517"/><rect class="tw" x="89" y="258" width="2.4" height="3" fill="#ffd27a" style="--d:1.9s"/><rect class="tw" x="89" y="267" width="2.4" height="3" fill="#ffd27a" style="--d:4.4s"/><rect class="tw" x="95" y="276" width="2.4" height="3" fill="#ffd27a" style="--d:4.7s"/><rect class="tw" x="95" y="294" width="2.4" height="3" fill="#ffd27a" style="--d:0.8s"/><rect x="100" y="263" width="18" height="35" fill="#0b0517"/><rect class="tw" x="103" y="269" width="2.4" height="3" fill="#ffd27a" style="--d:4.5s"/><rect class="tw" x="103" y="278" width="2.4" height="3" fill="#ffd27a" style="--d:4.1s"/><rect x="118" y="263" width="18" height="35" fill="#0b0517"/><rect class="tw" x="121" y="269" width="2.4" height="3" fill="#ffd27a" style="--d:4.9s"/><rect x="136" y="263" width="18" height="35" fill="#0b0517"/><rect class="tw" x="139" y="269" width="2.4" height="3" fill="#ffd27a" style="--d:1.5s"/><rect class="tw" x="145" y="269" width="2.4" height="3" fill="#ffd27a" style="--d:2.9s"/><rect class="tw" x="139" y="278" width="2.4" height="3" fill="#ffd27a" style="--d:2.1s"/><rect class="tw" x="145" y="278" width="2.4" height="3" fill="#ffd27a" style="--d:4.6s"/><rect x="154" y="212" width="16" height="86" fill="#0b0517"/><rect class="tw" x="157" y="236" width="2.4" height="3" fill="#ffd27a" style="--d:2.2s"/><rect class="tw" x="163" y="236" width="2.4" height="3" fill="#ffd27a" style="--d:0.0s"/><rect class="tw" x="163" y="245" width="2.4" height="3" fill="#ffd27a" style="--d:2.4s"/><rect class="tw" x="157" y="281" width="2.4" height="3" fill="#ffd27a" style="--d:2.8s"/><rect class="tw" x="163" y="281" width="2.4" height="3" fill="#ffd27a" style="--d:1.4s"/>
+              <g class="girl">
+                <g class="sway"><path d="M83 78 C 40 78 28 130 32 190 C 34 225 28 250 38 275 L 128 275 C 138 250 132 225 134 190 C 138 130 126 78 83 78 Z" fill="url(#hairg)"/></g>
+                <path d="M20 298 C 22 250 50 232 83 232 C 116 232 144 250 146 298 Z" fill="#c4122a"/>
+                <path d="M52 238 C 62 264 104 264 114 238 C 104 230 62 230 52 238 Z" fill="#8f0d1f"/>
+                <path d="M74 250 V 276 M92 250 V 276" stroke="#f2dcdc" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M70 200 L70 238 C 76 248 90 248 96 238 L96 200 Z" fill="#efc9b6"/>
+                <ellipse cx="83" cy="150" rx="39" ry="47" fill="#f7dccb"/>
+                <ellipse cx="62" cy="177" rx="8" ry="4" fill="#ff7a8a" opacity=".35"/><ellipse cx="104" cy="177" rx="8" ry="4" fill="#ff7a8a" opacity=".35"/>
+                <g class="blink"><ellipse cx="66" cy="160" rx="10" ry="12" fill="#fff"/><ellipse cx="66" cy="162" rx="7.2" ry="10" fill="url(#iris)"/><ellipse cx="66" cy="163" rx="3.2" ry="5.5" fill="#240612"/><circle cx="63.4" cy="157" r="2.6" fill="#fff"/><circle cx="69" cy="168" r="1.2" fill="#fff"/></g><path d="M54.5 154 Q66 143 77.5 154" fill="none" stroke="#1a0a1c" stroke-width="2.6" stroke-linecap="round"/><g class="blink"><ellipse cx="100" cy="160" rx="10" ry="12" fill="#fff"/><ellipse cx="100" cy="162" rx="7.2" ry="10" fill="url(#iris)"/><ellipse cx="100" cy="163" rx="3.2" ry="5.5" fill="#240612"/><circle cx="97.4" cy="157" r="2.6" fill="#fff"/><circle cx="103" cy="168" r="1.2" fill="#fff"/></g><path d="M88.5 154 Q100 143 111.5 154" fill="none" stroke="#1a0a1c" stroke-width="2.6" stroke-linecap="round"/>
+                <path d="M54 141 Q66 134 77 140 M89 140 Q100 134 112 141" fill="none" stroke="#2a1630" stroke-width="2" stroke-linecap="round"/>
+                <path d="M83 172 q-2.5 4 1 5" fill="none" stroke="#d9a995" stroke-width="1.2" stroke-linecap="round"/>
+                <path class="mouth" d="M75 186 Q83 194 91 186" fill="none" stroke="#b03048" stroke-width="2" stroke-linecap="round"/>
+                <path d="M44 140 C 44 100 62 84 83 84 C 104 84 122 100 122 140 C 112 118 100 110 90 108 C 86 122 74 130 62 128 C 56 130 50 136 44 140 Z" fill="url(#hairg)"/>
+                <path d="M44 140 C 38 170 40 205 46 228 C 52 205 52 170 50 148 Z M122 140 C 128 170 126 205 120 228 C 114 205 114 170 116 148 Z" fill="url(#hairg)"/>
+                <path d="M44 152 C 42 82 124 82 122 152" fill="none" stroke="#15151a" stroke-width="7" stroke-linecap="round"/>
+                <path d="M44 152 C 42 82 124 82 122 152" fill="none" stroke="#ff1e2d" stroke-width="1.2" opacity=".8"/>
+                <ellipse cx="42" cy="158" rx="9" ry="16" fill="#15151a" stroke="#ff1e2d" stroke-width="1.5"/><ellipse cx="124" cy="158" rx="9" ry="16" fill="#15151a" stroke="#ff1e2d" stroke-width="1.5"/>
+                <circle class="led" cx="42" cy="158" r="3.6" fill="#ff1e2d"/><circle class="led" cx="124" cy="158" r="3.6" fill="#ff1e2d"/>
+                <path d="M40 172 C 38 194 52 204 68 200" fill="none" stroke="#15151a" stroke-width="2.4" stroke-linecap="round"/><circle cx="69" cy="200" r="3.2" fill="#15151a"/>
+              </g>
+              <path class="spark" d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#ffd0e0" transform="translate(20 120)" style="--d:0s"/><path class="spark" d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#ffd0e0" transform="translate(146 150)" style="--d:1.3s"/><path class="spark" d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#ffd0e0" transform="translate(30 220)" style="--d:2.1s"/><path class="spark" d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#ffd0e0" transform="translate(140 90)" style="--d:0.6s"/>
+              <foreignObject width="166" height="298" pointer-events="none"><video class="screenvid" src="screen-girl.mp4" autoplay muted loop playsinline preload="auto"></video></foreignObject>
+              <rect width="166" height="298" fill="url(#vig)"/>
+              <g class="stg stg-black2"><rect width="166" height="298" fill="#000"/></g>
+              <rect width="166" height="298" fill="url(#scan2)"/>
+              <polygon points="0,0 90,0 0,150" fill="#fff" opacity=".05"/>
+            </svg>
+            <circle class="mled" cx="650" cy="466.5" r="1.1"/><circle class="mled" cx="292" cy="461" r="1.1"/>
+            <circle class="plug" cx="896" cy="262" r="3.6"/><circle class="plug" cx="898" cy="344" r="3.6"/><circle class="plug" cx="756" cy="296" r="3.6"/><circle class="plug" cx="710" cy="300" r="3.6"/><circle class="plug" cx="710" cy="316" r="3.6"/><circle class="plug" cx="710" cy="484" r="3.6"/><circle class="plug" cx="710" cy="492" r="3.6"/><circle class="plug" cx="510" cy="476" r="3.6"/><circle class="plug" cx="220" cy="480" r="3.6"/>
+          </g>
+          </svg>
+            </div>
+          </div>
+          <ul class="setup-legend"><li><small>Secondary monitor</small><b>Samsung NC241 24-inch (portrait)</b></li><li><small>Main monitor</small><b>Samsung N4010 32-inch</b></li><li><small>CPU</small><b>Intel Core i5-4590</b></li><li><small>GPU</small><b>MSI GTX 660</b></li><li><small>SSD</small><b>Transcend SSD225S 512GB</b></li><li><small>HDD</small><b>Seagate Barracuda 1TB</b></li><li><small>Mouse</small><b>A4Tech Gaming Mouse</b></li><li><small>Headset</small><b>Marvo Scorpion Headset</b></li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="panel reveal">
+        <h2>&gt; contact</h2>
+        <div class="server-cards">
+          <div class="server-card" data-invite="sXdJaQRWK">
+            <div class="s-icon"><svg class="ico" style="--d:0s" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></div>
+            <div class="s-info">
+              <b class="s-name">Discord server 1</b>
+              <div class="s-stats">
+                <span class="pill"><i class="dot"></i><b class="s-online">-</b> online</span>
+                <span class="pill"><b class="s-members">-</b> members</span>
+              </div>
+              <small class="s-note">Loading live stats...</small>
+            </div>
+          </div>
+          <div class="server-card" data-invite="gEKcfgQ4f">
+            <div class="s-icon"><svg class="ico" style="--d:0s" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></div>
+            <div class="s-info">
+              <b class="s-name">Discord server 2</b>
+              <div class="s-stats">
+                <span class="pill"><i class="dot"></i><b class="s-online">-</b> online</span>
+                <span class="pill"><b class="s-members">-</b> members</span>
+              </div>
+              <small class="s-note">Loading live stats...</small>
+            </div>
+          </div>
+        </div>
+        <div class="links">
+          <button type="button" class="social" data-copy="bandaara" data-msg="Discord username copied: bandaara"><svg class="ico" style="--d:0s" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg> Discord: bandaara</button>
+          <a class="social" href="https://discord.gg/sXdJaQRWK" target="_blank" rel="noopener" data-join="sXdJaQRWK"><svg class="ico join-ico" style="--d:0.5s" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg> <span>Join server 1</span></a>
+          <a class="social" href="https://discord.gg/gEKcfgQ4f" target="_blank" rel="noopener" data-join="gEKcfgQ4f"><svg class="ico join-ico" style="--d:1s" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg> <span>Join server 2</span></a>
+          <a class="social" href="https://www.tiktok.com/@pabasaraweerasingha2008" target="_blank" rel="noopener"><svg class="ico" style="--d:1.5s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> TikTok</a>
+          <a class="social" href="https://wa.me/94772578848" target="_blank" rel="noopener"><svg class="ico" style="--d:2s" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> WhatsApp</a>
+          <a class="social" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=pabasaraweerasinghapersonal@gmail.com" target="_blank" rel="noopener" data-copy="pabasaraweerasinghapersonal@gmail.com" data-msg="Email copied"><svg class="ico" style="--d:2.5s" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg> Mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
